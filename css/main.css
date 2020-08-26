@@ -12,6 +12,11 @@
     font-family: 'Jeju Myeongjo', serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .slider {
     position: absolute;
     top: 0;
@@ -40,8 +45,9 @@ nav ul {
     grid-column: 4/5;
 }
 
-nav ul li {
+nav ul li a {
     padding: 20px;
+    color: white;
 }
 
 section {
@@ -91,9 +97,12 @@ section {
 .intro--title {
     display: flex;
     width: 100vw;
-    height: 20vh;
+    height: 40vh;
     font-size: 24px;
     align-items: center;
+    border-bottom: .5px solid rgba(0, 0, 0, .05);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .05);
+    font-family: 'MapoFlowerIsland';
 }
 
 .intro--title h1 {
@@ -110,26 +119,33 @@ intro--content {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 10vw;
-    font-family: 'MapoFlowerIsland';
+    margin: 10vh auto 10vw;
+    /* text-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0 1px 25px rgba(0, 0, 0, .55); */
 }
 
 .intro--text {
     width: 40vw;
     margin: 5vw;
     opacity: 0;
-    transform: translateY(20px);
-    transition: 1s all ease-in-out;
+    font-family: 'MapoFlowerIsland';
+    line-height: 1.7;
+    transform: translateY(80px);
+    transition: 0.7s all ease-in-out;
 }
 
 .intro--text h2 {
     font-size: 24px;
     text-decoration: underline;
+    font-family: 'Jeju Myeongjo', serif;
 }
 
 .intro--text--appear {
     opacity: 1;
     transform: translateY(0px);
+}
+
+.intro--up {
+    width: 100vw;
 }
 
 .intro--img {
