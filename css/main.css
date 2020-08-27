@@ -14,7 +14,13 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'MapoFlowerIsland';
 }
 
 .slider {
@@ -43,11 +49,13 @@ nav {
 nav ul {
     display: flex;
     grid-column: 4/5;
+    justify-content: flex-end;
 }
 
 nav ul li a {
     padding: 20px;
     color: white;
+    display: inline-block;
 }
 
 section {
@@ -92,7 +100,51 @@ section {
 }
 
 
-/* INTRO */
+/* INTRO_HOUSE */
+
+.introduce {
+    height: 100vh;
+    position: relative;
+}
+
+.introduce--title {
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    font-size: 24px;
+    align-items: center;
+    border-bottom: .5px solid rgba(0, 0, 0, .05);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .05);
+    font-family: 'MapoFlowerIsland';
+}
+
+.introduce--title h1 {
+    letter-spacing: 5px;
+    margin: 0 auto;
+}
+
+.introduce--content {
+    align-items: center;
+}
+
+.introduce--content p {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.introduce--wide {
+    margin-top: 10vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* INTRO_ROOM */
 
 .intro--title {
     display: flex;
@@ -106,10 +158,12 @@ section {
 }
 
 .intro--title h1 {
+    letter-spacing: 5px;
     margin: 0 auto;
 }
 
-intro--content {
+
+/* intro--content {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -120,7 +174,7 @@ intro--content {
     justify-content: center;
     align-items: center;
     margin: 10vh auto 10vw;
-    /* text-shadow: 0 1px 1px rgba(0, 0, 0, .15), 0 1px 25px rgba(0, 0, 0, .55); */
+
 }
 
 .intro--text {
@@ -151,4 +205,4 @@ intro--content {
 .intro--img {
     max-width: 45vw;
     min-width: 40vw;
-}
+} */

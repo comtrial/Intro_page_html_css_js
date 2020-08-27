@@ -6,12 +6,10 @@ export class SmoothScroll {
         this.distance = this.targetPosition - this.startPosition;
         this.startTime = null;
         this.duration = duration;
-        console.log(this.startTime);
         requestAnimationFrame(this.animationScroll.bind(this));
     }
 
     animationScroll(currentTime) {
-        console.log(this.startTime);
         if (this.startTime === null) this.startTime = currentTime;
 
         let timeElapsed = currentTime - this.startTime;
